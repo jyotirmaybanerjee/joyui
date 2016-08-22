@@ -1,0 +1,76 @@
+@import "~bourbon/app/assets/stylesheets/bourbon"
+@import "~bourbon-neat/app/assets/stylesheets/neat"
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic)
+
+.table>caption+thead>tr:first-child>td,
+.table>caption+thead>tr:first-child>th,
+.table>colgroup+thead>tr:first-child>td,
+.table>colgroup+thead>tr:first-child>th,
+.table>thead:first-child>tr:first-child>td,
+.table>thead:first-child>tr:first-child>th
+  border-top: 0
+
+.table>thead>tr>th
+  vertical-align: bottom
+  border-bottom: 2px solid #ddd
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th
+  padding: 8px
+  line-height: 1.42857143
+  vertical-align: top
+  border-top: 1px solid #ddd
+
+.table
+  width: 100%
+  max-width: 100%
+  margin-bottom: 20px
+
+table
+  background-color: transparent
+  border-spacing: 0
+  border-collapse: collapse
+
+thead
+  display: table-header-group
+  vertical-align: middle
+  border-color: inherit
+
+tbody
+  display: table-row-group
+  vertical-align: middle
+  border-color: inherit
+
+tr
+  display: table-row
+  vertical-align: inherit
+  border-color: inherit
+
+th
+  text-align: left
+
+td, th
+  padding: 0
+  display: table-cell
+  vertical-align: inherit
+
+#search-bar
+  width: 100%
+  font-size: 1.3em
+  border-bottom: 1px solid #e4e4e4
+  border-top: none
+  border-right: none
+  border-left: none
+  @include padding(0.8em 1.2em)
+  &:focus
+    outline: none
+[placeholder]:focus::-webkit-input-placeholder
+  transition: opacity 0.2s 0.2s ease
+  opacity: 0
+
+#catalogue
+  @include padding(3em)

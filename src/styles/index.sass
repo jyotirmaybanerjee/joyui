@@ -1,0 +1,59 @@
+@import reset
+@import mixins
+@import './variables.sass'
+
+html
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+
+body
+  font: 100% $font-stack
+  font-size: 15px
+  color: $primary-color
+  line-height: 24px
+
+pre
+  white-space: pre-wrap
+  background-color: #ffffff
+  border: 1px solid #898989
+  padding: 5px
+  tab-size: 2
+  
+.message
+  border: 1px solid #ccc
+  padding: 10px
+  color: $primary-color
+
+
+.success
+  @extend .message
+  border-color: $success-color
+
+
+.error
+  @extend .message
+  border-color: $danger-color
+
+
+.warning
+  @extend .message
+  border-color: $warning-color
+
+
+.container
+  width: 100%
+
+article[role="main"]
+  float: left
+  width: 600px / 960px * 100%
+
+
+aside[role="complementary"]
+  float: right
+  width: 300px / 960px * 100%
+
+.box
+  +border-radius(10px)
+
+
+

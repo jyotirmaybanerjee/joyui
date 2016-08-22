@@ -1,0 +1,75 @@
+.raised-btn
+  color: rgba(0, 0, 0, 0.870588)
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+  box-sizing: border-box
+  font-family: Roboto, sans-serif
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px
+  border-radius: 2px
+  display: inline-block
+  min-width: 88px
+  background-color: rgb(255, 255, 255)
+  &.full-width
+    min-width: 100%
+  &:not(.full-width)
+    margin: 12px
+
+  button
+    border: 10px
+    box-sizing: border-box
+    display: inline-block
+    font-family: Roboto, sans-serif
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    cursor: pointer
+    text-decoration: none
+    margin: 0px
+    padding: 0px
+    outline: none
+    font-size: inherit
+    font-weight: inherit
+    transform: translate(0px, 0px)
+    position: relative
+    height: 36px
+    line-height: 36px
+    width: 100%
+    border-radius: 2px
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+    text-align: center
+    &.primary
+      background-color: rgb(0, 188, 212)
+    &.secondary
+      background-color: rgb(255, 64, 129)
+    &.disabled
+      background-color: rgb(224, 224, 224)
+      cursor: default
+    .inner-container
+      height: 36px
+      border-radius: 2px
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms
+      top: 0px
+      .inner-span
+        position: relative
+        opacity: 1
+        font-size: 14px
+        letter-spacing: 0px
+        text-transform: uppercase
+        font-weight: 500
+        margin: 0px
+        padding-left: 16px
+        padding-right: 16px
+        color: rgba(0, 0, 0, 0.870588)
+        &.primary, &.secondary
+          color: rgb(255, 255, 255)
+        -webkit-user-select: none
+
+.raised-btn
+  button.default
+    .inner-container
+      &:hover
+        background-color: rgba(0, 0, 0, 0.0784314)
+
+.raised-btn
+  button.primary, button.secondary
+    .inner-container
+      &:hover
+        background-color: rgba(255, 255, 255, 0.4)
